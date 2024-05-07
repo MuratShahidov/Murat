@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Простая Игра</title>
+<style>
+  body { text-align: center; background-color: #f0f0f0; color: #333; font-family: Arial, sans-serif; }
+  #changeText { background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; }
+</style>
+</head>
+<body>
+  <h1 id="textDisplay">Нажмите на кнопку, чтобы изменить этот текст</h1>
+  <button id="changeText" onclick="changeText()">Нажми на меня</button>
+<script>
+  function changeText() {
+    document.getElementById('textDisplay').innerHTML = 'Текст изменен!';
+  }
+</script>
+</body>
+</html>
